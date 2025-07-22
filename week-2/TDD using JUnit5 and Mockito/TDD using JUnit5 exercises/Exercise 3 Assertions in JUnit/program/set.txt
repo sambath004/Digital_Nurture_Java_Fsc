@@ -1,0 +1,20 @@
+
+
+
+Set Interface:
+===================
+It is an sub-interface of Collection present in java.util.Package
+Like List interface there is no Extra methods in Set (After java 20 versions Of() included)
+
+Characteristics:
+1. No indexing
+2. Unordered collection of elements.
+3. No Duplicates 
+4. Only one null value
+5. it can store both homogeneous and heterogeneous elements.
+
+When to Use a Set?
+-->When you need unique elements.
+-->When order does not matter (HashSet).
+-->When you need elements in insertion order (LinkedHashSet).
+-->When you need sorted elements (TreeSet).
