@@ -15,18 +15,15 @@ public class AccountController {
 
     @GetMapping("/{number}")
     public Map<String, Object> getAccountDetails(@PathVariable String number) {
-        // Account info
         Map<String, Object> accountDetails = Map.of(
             "number", number,
             "type", "savings",
             "balance", 234343
         );
 
-        // Fetch loan info from Loan Service
         String loanServiceUrl = "http://localhost:8081/loans/" + number;
         Map<String, Object> loanDetails = restTemplate.getForObject(loanServiceUrl, Map.class);
 
-        // Combine both
         return Map.of(
             "account", accountDetails,
             "loan", loanDetails
