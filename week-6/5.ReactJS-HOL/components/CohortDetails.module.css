@@ -1,0 +1,32 @@
+.container {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 100%;
+  max-width: 980px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.cohortList {
+  display: flex;
+  gap: 20px;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+dt {
+  font-weight: 500;
+}
